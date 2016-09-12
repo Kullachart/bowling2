@@ -26,12 +26,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         hub2ImageView = (ImageView) findViewById(R.id.imageView3);
         hub3ImageView = (ImageView) findViewById(R.id.imageView4);
         hub4ImageView = (ImageView) findViewById(R.id.imageView5);
+        //  hub5ImageView = (ImageView) findViewById(R.id.imageView6);
 
         //Image Controller
         hub1ImageView.setOnClickListener(this);
         hub2ImageView.setOnClickListener(this);
         hub3ImageView.setOnClickListener(this);
         hub4ImageView.setOnClickListener(this);
+
 
     }   // Main Method
 
