@@ -134,5 +134,31 @@
                 android:src="@drawable/gray" />
         </LinearLayout>
 
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DFS"
+                android:id="@+id/textView12"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gel"
+                android:id="@+id/textView13"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold" />
+        </LinearLayout>
+
     </LinearLayout>
 </RelativeLayout>

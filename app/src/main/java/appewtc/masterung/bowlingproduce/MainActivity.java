@@ -10,9 +10,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     //Explicit
     private ImageView hub1ImageView, hub2ImageView,
-            hub3ImageView, hub4ImageView;
+            hub3ImageView, hub4ImageView,
+            hub5ImageView, hub6Imageview ;
     private String[] catStrings = new String[]{"Category1", "Category2",
-            "Category3", "Category4"};
+            "Category3", "Category4" ,"Category5", "Category6"};
     private String catUserChooseString;
 
 
@@ -26,6 +27,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         hub2ImageView = (ImageView) findViewById(R.id.imageView3);
         hub3ImageView = (ImageView) findViewById(R.id.imageView4);
         hub4ImageView = (ImageView) findViewById(R.id.imageView5);
+        hub5ImageView = (ImageView) findViewById(R.id.imageView7);  // BL
+        hub6Imageview = (ImageView) findViewById(R.id.imageView8);  // BL
+
+
+
         //  hub5ImageView = (ImageView) findViewById(R.id.imageView6);
 
         //Image Controller
@@ -33,6 +39,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         hub2ImageView.setOnClickListener(this);
         hub3ImageView.setOnClickListener(this);
         hub4ImageView.setOnClickListener(this);
+        hub5ImageView.setOnClickListener(this);
+        hub6Imageview.setOnClickListener(this);
 
 
     }   // Main Method
@@ -57,6 +65,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.imageView5:
                 catUserChooseString = catStrings[3];
                 break;
+            case R.id.imageView7:
+                catUserChooseString = catStrings[4];
+                break;
+            case R.id.imageView8:
+                catUserChooseString = catStrings[5];
+                break;
+
 
         }   // switch
 

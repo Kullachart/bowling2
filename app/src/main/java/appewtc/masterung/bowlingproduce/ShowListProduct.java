@@ -60,8 +60,12 @@ public class ShowListProduct extends AppCompatActivity implements View.OnClickLi
             urlJSONString = "http://swiftcodingthai.com/bow/get_product_cat2_master.php";
         } else if (categoryString.equals(catStrings[2])) {
             urlJSONString = "http://swiftcodingthai.com/bow/get_product_cat3_master.php";
-        } else {
+        } else if (categoryString.equals(catStrings[3])) {
             urlJSONString = "http://swiftcodingthai.com/bow/get_product_cat4_master.php";
+        } else if (categoryString.equals(catStrings[4])) {
+            urlJSONString = "http://swiftcodingthai.com/bow/get_product_cat5_master.php";
+        } else {
+            urlJSONString = "http://swiftcodingthai.com/bow/get_product_cat6_master.php";
         }
 
         //Create ListView by Data on Server
