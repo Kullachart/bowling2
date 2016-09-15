@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="appewtc.masterung.bowlingproduce.MainActivity"
-    android:background="@drawable/bg10">
+    android:background="@drawable/bg6">
 
     <ListView
         android:layout_width="wrap_content"

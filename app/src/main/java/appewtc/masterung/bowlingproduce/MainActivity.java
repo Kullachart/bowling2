@@ -11,9 +11,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     //Explicit
     private ImageView hub1ImageView, hub2ImageView,
             hub3ImageView, hub4ImageView,
-            hub5ImageView, hub6Imageview ;
+            hub5ImageView, hub6Imageview,
+            hub7ImageView, hub8ImageView;
+
     private String[] catStrings = new String[]{"Category1", "Category2",
-            "Category3", "Category4" ,"Category5", "Category6"};
+            "Category3", "Category4" ,"Category5", "Category6","Category7","Category8"};
     private String catUserChooseString;
 
 
@@ -29,10 +31,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         hub4ImageView = (ImageView) findViewById(R.id.imageView5);
         hub5ImageView = (ImageView) findViewById(R.id.imageView7);  // BL
         hub6Imageview = (ImageView) findViewById(R.id.imageView8);  // BL
+        hub7ImageView = (ImageView) findViewById(R.id.imageView9);
+        hub8ImageView = (ImageView) findViewById(R.id.imageView10);
 
 
 
-        //  hub5ImageView = (ImageView) findViewById(R.id.imageView6);
 
         //Image Controller
         hub1ImageView.setOnClickListener(this);
@@ -41,6 +44,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         hub4ImageView.setOnClickListener(this);
         hub5ImageView.setOnClickListener(this);
         hub6Imageview.setOnClickListener(this);
+        hub7ImageView.setOnClickListener(this);
+        hub8ImageView.setOnClickListener(this);
+
 
 
     }   // Main Method
@@ -70,6 +76,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.imageView8:
                 catUserChooseString = catStrings[5];
+                break;
+            case R.id.imageView9:
+                catUserChooseString = catStrings[6];
+                break;
+            case R.id.imageView10:
+                catUserChooseString = catStrings[7];
                 break;
 
 
