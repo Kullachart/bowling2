@@ -1,5 +1,6 @@
 package appewtc.masterung.bowlingproduce;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -53,6 +54,20 @@ public class DetailActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        // Image Controller
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(DetailActivity.this, ShowBigActivity.class);
+                intent.putExtra("Icon", getIntent().getStringExtra("Icon"));
+                startActivity(intent);
+
+
+            }
+        });
+
 
 
 
