@@ -27,14 +27,14 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/imageView2"
                 android:layout_weight="1"
-                android:src="@drawable/blue" />
+                android:src="@drawable/aerosol1" />
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageView3"
                 android:layout_weight="1"
-                android:src="@drawable/gray" />
+                android:src="@drawable/emk2" />
         </LinearLayout>
 
         <LinearLayout
@@ -45,13 +45,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Aerosol"
                 android:id="@+id/textView4"
                 android:textSize="@dimen/h1"
                 android:textStyle="bold"
                 android:textColor="@color/text"
                 android:layout_weight="1"
-                android:gravity="center_horizontal" />
+                android:gravity="center_horizontal"
+                android:text="Aerosol" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -76,14 +76,14 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/imageView4"
                 android:layout_weight="1"
-                android:src="@drawable/green" />
+                android:src="@drawable/bait" />
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageView5"
                 android:layout_weight="1"
-                android:src="@drawable/orange" />
+                android:src="@drawable/coil" />
         </LinearLayout>
 
         <LinearLayout
@@ -125,14 +125,14 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/imageView7"
                 android:layout_weight="1"
-                android:src="@drawable/red" />
+                android:src="@drawable/dfssprey" />
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageView8"
                 android:layout_weight="1"
-                android:src="@drawable/gray" />
+                android:src="@drawable/dfscon" />
         </LinearLayout>
 
         <LinearLayout
@@ -172,7 +172,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/imageView9"
                 android:layout_weight="1"
-                android:src="@drawable/green" />
+                android:src="@drawable/dfsodor" />
 
             <ImageView
                 android:layout_width="wrap_content"

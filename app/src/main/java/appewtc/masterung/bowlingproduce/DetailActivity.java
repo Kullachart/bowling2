@@ -38,7 +38,11 @@ public class DetailActivity extends AppCompatActivity {
 
         // Show Image
         Picasso.with(this).load(getIntent()
-                .getStringExtra("Icon")).resize(150,180).into(imageView);
+                .getStringExtra("Icon")).resize(300,300).into(imageView);
+
+        // Picasso.with(this).load(getIntent()
+        //     .getStringExtra("Icon")).resize(150,180).into(imageView);
+
 
 
 
