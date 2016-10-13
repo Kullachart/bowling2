@@ -1,10 +1,13 @@
 package appewtc.masterung.bowlingproduce;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.squareup.okhttp.OkHttpClient;
@@ -75,9 +78,9 @@ public class Main2Activity extends AppCompatActivity {
 
                 JSONArray jsonArray = new JSONArray(s);
 
-                String[] catStrings = new String[jsonArray.length()];
+                final String[] catStrings = new String[jsonArray.length()];
                 String[] imageStrings = new String[jsonArray.length()];
-                String[] urlStrings = new String[jsonArray.length()];
+                final String[] urlStrings = new String[jsonArray.length()];
 
                 for (int i=0;i<jsonArray.length();i++) {
 
@@ -90,6 +93,18 @@ public class Main2Activity extends AppCompatActivity {
 
                 CatAdapter catAdapter = new CatAdapter(context, catStrings, imageStrings);
                 listView.setAdapter(catAdapter);
+
+                listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                        Intent intent = new Intent(Main2Activity.this, ShowListProduct.class);
+                        intent.putExtra("urlJSON", urlStrings[position]);
+                        intent.putExtra("Category", catStrings[position]);
+                        startActivity(intent);
+
+                    }
+                });
 
             }catch (Exception e){
                 Log.d("13octV1", "e onPost ==>" + e.toString());
