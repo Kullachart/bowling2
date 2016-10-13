@@ -98,10 +98,17 @@ public class Main2Activity extends AppCompatActivity {
                     @Override
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                        Intent intent = new Intent(Main2Activity.this, ShowListProduct.class);
-                        intent.putExtra("urlJSON", urlStrings[position]);
-                        intent.putExtra("Category", catStrings[position]);
-                        startActivity(intent);
+                        if (position == (catStrings.length -1)) {
+
+                            Intent intent = new Intent(Main2Activity.this, VideoListView.class);
+                            startActivity(intent);
+
+                        } else {
+                            Intent intent = new Intent(Main2Activity.this, ShowListProduct.class);
+                            intent.putExtra("urlJSON", urlStrings[position]);
+                            intent.putExtra("Category", catStrings[position]);
+                            startActivity(intent);
+                        }
 
                     }
                 });
